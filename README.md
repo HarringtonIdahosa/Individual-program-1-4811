@@ -18,4 +18,3 @@ This C++ program reads integers from a file, stores them in three different data
      - Queue Contents
      - Stack Contents
      - List Contents
-# Credits
