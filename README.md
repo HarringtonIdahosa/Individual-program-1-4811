@@ -4,7 +4,7 @@
 # Overview
 This C++ program reads integers from a file, stores them in three different data structures (queue, stack, and list), and then displays the contents of each data structure. The list is also sorted in ascending order.
 
-#Instructions
+# Instructions
 1. Enter File Name:
    - The program prompts the user to enter the name of the input file containing integers.
    - Example: `Enter the file name: input.txt`
@@ -18,4 +18,4 @@ This C++ program reads integers from a file, stores them in three different data
      - Queue Contents
      - Stack Contents
      - List Contents
-#Credits
+# Credits
