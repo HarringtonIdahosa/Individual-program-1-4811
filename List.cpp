@@ -6,15 +6,15 @@
 
 
 int main() {
-    // Ask the user for the file name
-    std::cout << "Enter the file name: ";
+    // Ask user for the file name
+    std::cout << "Enter file name: ";
     std::string fileName;
     std::cin >> fileName;
 
     // Open the input file
     std::ifstream inputFile(fileName);
 
-    // Check if the file is open
+    // Error Check if the file is open
     if (!inputFile.is_open()) {
         std::cerr << "Error opening file." << std::endl;
         return 1;
@@ -36,7 +36,7 @@ int main() {
     // Close the file
     inputFile.close();
 
-    // Sort the list in ascending order
+    // Sort list in ascending order
     myList.sort();
 
     // QUEUE CONTENTS
