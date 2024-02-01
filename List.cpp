@@ -21,47 +21,46 @@ int main() {
     }
 
     // Initialize data structures
-    std::queue<int> myQueue;
-    std::stack<int> myStack;
-    std::list<int> myList;
+    std::queue<int> Queue;
+    std::stack<int> Stack;
+    std::list<int> List;
 
     // Read integers from the file 
     int value;
     while (inputFile >> value) {
-        myQueue.push(value);
-        myStack.push(value);
-        myList.push_back(value);
+        Queue.push(value);
+        Stack.push(value);
+        List.push_back(value);
     }
 
     // Close the file
     inputFile.close();
 
     // Sort list in ascending order
-    myList.sort();
+    List.sort();
 
     // QUEUE CONTENTS
     std::cout << "QUEUE CONTENTS:" << std::endl;
-    while (!myQueue.empty()) {
-        std::cout << myQueue.front() << " ";
-        myQueue.pop();
+    while (!Queue.empty()) {
+        std::cout << Queue.front() << " ";
+        Queue.pop();
     }
     std::cout << std::endl;
 
     // STACK CONTENTS
     std::cout << "STACK CONTENTS:" << std::endl;
-    while (!myStack.empty()) {
-        std::cout << myStack.top() << " ";
-        myStack.pop();
+    while (!Stack.empty()) {
+        std::cout << Stack.top() << " ";
+        Stack.pop();
     }
     std::cout << std::endl;
 
     // LIST CONTENTS
     std::cout << "LIST CONTENTS:" << std::endl;
-    for (const auto& item : myList) {
+    for (const auto& item : List) {
         std::cout << item << " ";
     }
     std::cout << std::endl;
 
     return 0;
 }
-
