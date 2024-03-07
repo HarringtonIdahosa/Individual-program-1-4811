@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <pthread.h>
 #include <semaphore.h>
+#include "common_threads.h"
 
 sem_t *s;  // Use a pointer for the semaphore
 
